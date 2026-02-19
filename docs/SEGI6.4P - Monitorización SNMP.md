@@ -1,4 +1,4 @@
-﻿![Generalitat Valenciana - CEUO / IES Poeta Paco Mollá (Alicante)](http://julio.iespacomolla.es/Recursos-Comunes/Cabecera_CEUO_IESPPM_NOFSE_Transparente.svg)
+﻿![Generalitat Valenciana - CEUO / IES Poeta Paco Mollá (Alicante)](https://raw.githubusercontent.com/juliogaray/recursos/main/img/Cabecera_CEUO_IESPPM_NOFSE_Transparente.svg)
 
 # Monitorización de servidores con SNMP
 
@@ -6,7 +6,7 @@
 1. Aprender a configurar SNMP en sistemas operativos profesionales (GNU/Linux) y en otros inferiores (…).
 2. Instalar y configurar herramientas de monitorización para observar el comportamiento de estos dispositivos virtuales.
 
-![Esquema de la práctica](http://julio.iespacomolla.es/SMR2.SEGI/imágenes/SEGI-P6.3-esquema.png)
+![Esquema de la práctica](https://raw.githubusercontent.com/juliogaray/SMR2.SEGI/main/docs/imágenes/SEGI-P6.3-esquema.png)
 
 ### Entrega
 Deberás:
@@ -28,7 +28,7 @@ Elabora y entrega un único archivo PDF con todo lo especificado, incluidas las 
 
 ## Paso 1: instalación de las máquinas virtuales
 
-Instala una máquina virtual con Debian, sin interfaz gráfico, pero con el software de servidor web (Apache). Ya sabes que dispones de [nuestro tutorial habitual](http://julio.iespacomolla.es/comunes/Tutorial%20de%20instalación%20Servidor%20Debian.md) para hacerlo.
+Instala una máquina virtual con Debian, sin interfaz gráfico, pero con el software de servidor web (Apache). Ya sabes que dispones de [nuestro tutorial habitual](https://raw.githubusercontent.com/juliogaray/comunes/main/Tutorial%20de%20instalación%20Servidor%20Debian.md) para hacerlo.
 
 Instala otra máquina virtual con Windows 10 u 11.
 
@@ -102,7 +102,7 @@ Zabbix permite monitorizar cualquier dispositivo que use SNMP, pero si se puede 
 
 ## Paso 4: instalación y configuración del software de monitorización (Zabbix)
 
-Realiza la instalación incial del servidor Zabbix siguiendo [este tutorial](http://julio.iespacomolla.es/SMR2.SEGI/SEGI6.4P%20-%20Zabbix%20I.md).
+Realiza la instalación incial del servidor Zabbix siguiendo [este tutorial](https://raw.githubusercontent.com/juliogaray/SMR2.SEGI/main/docs/SEGI6.4P%20-%20Zabbix%20I.md).
 
 Durante esta faase de instalación, realiza únicamente las siguientes capturas:
 - Página por defecto de Apache2 (desde el navegador de tu máquina anfitriona);
@@ -113,7 +113,7 @@ Guarda las capturas para entregarlas como parte del resultado de esta práctica.
 
 ## Paso 5: Configura el servidor Zabbix para monitorizar tus dos servidores
 
-Usa [este tutorial](http://julio.iespacomolla.es/SMR2.SEGI/SEGI6.4P%20-%20Zabbix%20II.md) para configurar Zabbix desde el interfaz web, y agregar los dos servidores a tu servidor Zabbix.
+Usa [este tutorial](https://raw.githubusercontent.com/juliogaray/SMR2.SEGI/main/docs/SEGI6.4P%20-%20Zabbix%20II.md) para configurar Zabbix desde el interfaz web, y agregar los dos servidores a tu servidor Zabbix.
 
 > NOTA: el tutorial está adaptado de otra práctica, y es posible que no todos los pasos estén completamente claros, o que falten algunos. Si es así, avisa a tu profesor(a).
 

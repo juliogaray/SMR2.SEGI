@@ -1,4 +1,4 @@
-﻿![Generalitat Valenciana - CEICE / IES Poeta Paco Mollá (Alicante)](http://julio.iespacomolla.es/Recursos-Comunes/Cabecera_CEICE_IESPPM_Transparente.svg)
+﻿![Generalitat Valenciana - CEICE / IES Poeta Paco Mollá (Alicante)](https://raw.githubusercontent.com/juliogaray/recursos/main/img/Cabecera_CEICE_IESPPM_Transparente.svg)
 
 # Instalación y configuración de un cortafuegos dedicado
 
@@ -91,7 +91,7 @@ Características requeridas:
 - Sistema: Debian, última versión
 - Configuración de red: un único interfaz, **conectado a red interna**
 
-[Instálalo](https://julio.iespacomolla.es/comunes/Tutorial%20de%20instalaci%C3%B3n%20Servidor%20Debian.md) como una máquina normal Debian, **pero**:
+[Instálalo](https://raw.githubusercontent.com/juliogaray/comunes/main/Tutorial%20de%20instalaci%C3%B3n%20Servidor%20Debian.md) como una máquina normal Debian, **pero**:
 
 Cuando te dé la opción de elegir qué paquetes instalar, marca estos:
 
@@ -171,7 +171,7 @@ Sigue los pasos de instalación del tutorial de Debian, pero con la siguiente pa
 
 ![Paquetes que se deben instalar: (1) web server, (2) SSH server y (3) Utilidades estándar del sistema](http://julio.iespacomolla.es/SMR2.SEGI/imágenes/Seleccionar_paquetes_servidor_web.png)
 
-Sigue cuidadosamente las [instrucciones de instalación de Debian](https://julio.iespacomolla.es/comunes/Tutorial%20de%20instalaci%C3%B3n%20Servidor%20Debian.md) que ya conoces.
+Sigue cuidadosamente las [instrucciones de instalación de Debian](https://raw.githubusercontent.com/juliogaray/comunes/main/Tutorial%20de%20instalaci%C3%B3n%20Servidor%20Debian.md) que ya conoces.
 
 Una vez instalado y reiniciado el sistema, lo actualizaremos e instalaremos el paquete resolvconf:
 ```shell

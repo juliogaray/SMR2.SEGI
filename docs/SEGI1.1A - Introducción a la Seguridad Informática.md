@@ -1,4 +1,4 @@
-﻿![Generalitat Valenciana - CEICE / IES Poeta Paco Mollá (Alicante)](http://julio.iespacomolla.es/Recursos-Comunes/Cabecera_CEICE_IESPPM_Transparente.svg)
+﻿![Generalitat Valenciana - CEICE / IES Poeta Paco Mollá (Alicante)](https://raw.githubusercontent.com/juliogaray/recursos/main/img/Cabecera_CEICE_IESPPM_Transparente.svg)
 # Introducción a la Seguridad Informática
 
 La **seguridad informática** es la práctica de proteger la información mitigando los riesgos a que puede verse sometida. Se suele considerar que incluye la prevención (o al menos la reduc­ción de la probabilidad) de que la información se vea afectada por:

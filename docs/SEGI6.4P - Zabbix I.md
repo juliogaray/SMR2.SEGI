@@ -1,4 +1,4 @@
-﻿![Generalitat Valenciana - CEICE / IES Poeta Paco Mollá (Alicante)](http://julio.iespacomolla.es/Recursos-Comunes/Cabecera_CEICE_IESPPM_Transparente.svg)
+﻿![Generalitat Valenciana - CEICE / IES Poeta Paco Mollá (Alicante)](https://raw.githubusercontent.com/juliogaray/recursos/main/img/Cabecera_CEICE_IESPPM_Transparente.svg)
 
 # Instalación y uso de *Zabbix* I
 
@@ -10,7 +10,7 @@ En esta guía vamos a instalar Zabbix sobre un servidor Debian.
 
 Vamos a instalar Zabbix en una máquina virtual, y después configuraremos y usaremos la aplicación desde otra máquina, accediendo a través del interfaz web proporcionado por la aplicación en la primera máquina.
 
-Para poder hacer esto, la máquina virtual donde instalaremos Zabbix necesitará una dirección IP fija; crea un servidor Debian usando [este tutorial](https://julio.iespacomolla.es/comunes/Tutorial%20de%20instalaci%C3%B3n%20Servidor%20Debian.md) y configúralo en la *red NAT* **SEGI**, con la dirección IP fija ```10.0.2.X```, donde 'X' es tu n.º de PC en clase. ten en cuenta que su **puerta de enlace** es la dirección de tu máquina anfitriona dentro de la red SEGI, es decir, 10.0.2.1.
+Para poder hacer esto, la máquina virtual donde instalaremos Zabbix necesitará una dirección IP fija; crea un servidor Debian usando [este tutorial](https://raw.githubusercontent.com/juliogaray/comunes/main/Tutorial%20de%20instalaci%C3%B3n%20Servidor%20Debian.md) y configúralo en la *red NAT* **SEGI**, con la dirección IP fija ```10.0.2.X```, donde 'X' es tu n.º de PC en clase. ten en cuenta que su **puerta de enlace** es la dirección de tu máquina anfitriona dentro de la red SEGI, es decir, 10.0.2.1.
 
 ## Proceso de instalación de Zabbix
 
@@ -32,7 +32,7 @@ sudo apt -y upgrade
 
 > **NOTA**: es probable que a lo largo de los próximos pasos desees copiar el texto de este documento a la máquina virtual. Normalmente esto no es posible, ya que la máquina virtual dispone sólo de un entorno de texto, y no maneja ningún tipo de portapapeles (la herramienta con la que hacemos normalmente las operaciones de copiar/cortar/pegar).
 >
-> Una forma de solucionar esto es conectarse a la máquina virtual con **SSH** desde una ventana de comandos de la máquina anfitriona; pero como la máquina virtual está en la red NAT, necesitamos hacer [redirección de puertos](https://es.wikipedia.org/wiki/Redirecci%C3%B3n_de_puertos). En el [tutorial de instalación de servidores Debian](https://julio.iespacomolla.es/comunes/Tutorial%20de%20instalaci%C3%B3n%20Servidor%20Debian.md) se explica cómo hacerlo: sección 6.4.
+> Una forma de solucionar esto es conectarse a la máquina virtual con **SSH** desde una ventana de comandos de la máquina anfitriona; pero como la máquina virtual está en la red NAT, necesitamos hacer [redirección de puertos](https://es.wikipedia.org/wiki/Redirecci%C3%B3n_de_puertos). En el [tutorial de instalación de servidores Debian](https://raw.githubusercontent.com/juliogaray/comunes/main/Tutorial%20de%20instalaci%C3%B3n%20Servidor%20Debian.md) se explica cómo hacerlo: sección 6.4.
 
 ### Instalación de Apache
 
