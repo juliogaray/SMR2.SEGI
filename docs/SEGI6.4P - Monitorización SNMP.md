@@ -6,7 +6,7 @@
 1. Aprender a configurar SNMP en sistemas operativos profesionales (GNU/Linux) y en otros inferiores (…).
 2. Instalar y configurar herramientas de monitorización para observar el comportamiento de estos dispositivos virtuales.
 
-![Esquema de la práctica](https://raw.githubusercontent.com/juliogaray/SMR2.SEGI/main/docs/imágenes/SEGI-P6.3-esquema.png)
+![Esquema de la práctica](https://raw.githubusercontent.com/juliogaray/SMR2.SEGI/main/docs/img/SEGI-P6.3-esquema.png)
 
 ### Entrega
 Deberás:

@@ -27,7 +27,7 @@ podemos usar técnicas de redundancia y balanceo de carga para hacer el servicio
 
 Las dos formas básicas son NAS y SAN, pero no forman parte del temario de este módulo.
 
-## 3. Copias de seguridad e imágenes de respaldo
+## 3. Copias de seguridad e img de respaldo
 
 Una **copia de seguridad** o (en inglés, aunque el término también se usa habitualmente en castellano) ***back-up*** es una copia de los datos contenidos en un dispositivo de almacenamiento, efectuada con el objetivo de recuperarlos si el dispositivo de almacenamiento sufre alguna pérdida de datos.
 
@@ -49,7 +49,7 @@ archivos que queramos recuperar.
 
 Hay diversas maneras de abordar la realización de copias de seguridad. En primer lugar, podemos clasificarlos en dos métodos básicos:
 
-1. Copia de seguridad del dispositivo completo, a menudo llamadas imágenes, en referencia a que la copia sería una imagen perfecta del estado del dispositivo en el momento en que se hace;
+1. Copia de seguridad del dispositivo completo, a menudo llamadas img, en referencia a que la copia sería una imagen perfecta del estado del dispositivo en el momento en que se hace;
 2. Copias de seguridad a nivel de archivos.
 
 &nbsp;

@@ -1,7 +1,7 @@
 ﻿![Generalitat Valenciana - CEUO / IES Poeta Paco Mollá (Alicante)](http://julio.iespacomolla.es/Recursos-Comunes/Cabecera_CEUO_IESPPM_NOFSE_Transparente.svg)
 
-# Curso de Especialización en Administración de Servicios en la Nube
-## Módulo de Administración de Redes en la Nube
+# CFGM Sistemas Microinformáticos y Redes
+## Módulo de Seguridad Informática
 &nbsp;
 
 &nbsp;
