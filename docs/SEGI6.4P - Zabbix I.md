@@ -65,7 +65,7 @@ Para poder acceder al servidor Apache de tu máquina Zabbix, de nuevo tenemos qu
 
 A continuación deberías poder ver, desde tu navegador (de la máquina anfitriona), la página por defecto de Apache para Debian, visitando la web ```http://D.I.M.A:PuertoAsociado/```, donde «D.I.M.A» es la dirección IP de tu máquina anfitriona, y «PuertoAsociado» el número de puerto que has usado para hacer la redirección en el párrafo anterior. Deberías ver algo parecido a esto:
 
-![Página por defecto de Apache2 en Debian](https://i.stack.imgur.com/1NOHl.jpg)
+![Página por defecto de Apache2 en Debian](https://upload.wikimedia.org/wikipedia/commons/c/c0/Apache2_test.png)
 
 ### Instalación de PHP y PHP-FPM
 

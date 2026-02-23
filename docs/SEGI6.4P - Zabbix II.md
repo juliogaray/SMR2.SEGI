@@ -4,7 +4,7 @@
 
 Recuerda que **Zabbix** es una herramienta de monitorización de [código abierto](https://es.wikipedia.org/wiki/C%C3%B3digo_abierto) que permite obtener información continua sobre el rendimiento de muy variados servicios de red, servidores y dispositivos de todo tipo. Zabbix puede recolectar una gran cantidad de datos de los tipos más diversos y mostrar gráficas que den una idea inmediata del estado de los dispositivos conectados a la red y de su evolución.
 
-En la [primera parte](https://julio.iespacomolla.es/SMR2.SEGI/SMR2.SEGI/SEGI6.4P%20-%20Zabbix%20I.md) de este tutorial creamos el servidor, instalamos Zabbix (así como todo el software adicional que requiere) y ejecutamos todo el proceso de instalación desde la línea de comandos.
+En la [primera parte](https://juliogaray.github.io/SMR2.SEGI/SEGI6.4P%20-%20Zabbix%20II.md) de este tutorial creamos el servidor, instalamos Zabbix (así como todo el software adicional que requiere) y ejecutamos todo el proceso de instalación desde la línea de comandos.
 
 En esta segunda parte vamos a configurar **Zabbix** desde el interfaz web.
 
