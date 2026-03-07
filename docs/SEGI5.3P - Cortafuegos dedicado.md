@@ -118,7 +118,7 @@ Cuando hayas acabado de instalarlo, reinicia la máquina, y sigue estos pasos:
 7. Haz clic en "Save" para permitir que el navegador recuerde estos datos (si más adelante necesitas cambiar o corregir algo, será más cómodo).
 
 En este punto deberías estár viendo la página web de configuración del cortafuegos, parecida a esta (aunque con tus propias direcciones IP y demás información definida por ti):
-![Página web de configuración de IPFire](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/IPFire_2.21_-_Web_interface.png/800px-IPFire_2.21_-_Web_interface.png)
+![Página web de configuración de IPFire](img/IPFire_2.21_-_Web_interface.png)
 
 #### Configuración del cortafuegos
 Vamos a definir las reglas básicas para permitir el acceso a nuestro servidor web, y para permitir que desde éste se pueda acceder al servidor de caché de paquetes del instituto, para que la instalación sea rápida y para permitir las actualizaciones.
