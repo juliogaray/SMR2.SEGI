@@ -5,7 +5,7 @@
 
 En esta práctica vamos a instalar y configurar un cortafuegos dedicado, es decir, un ordenador con dos interfaces de red que podemos usar como cortafuegos para proteger nuestra red. Para ello montaremos el siguiente esquema con VirtualBox:
 
-![Esquema práctica](../img/SEGI-P5.3-esquema.png)
+![Esquema práctica](img/SEGI-P5.3-esquema.png)
 
 Como puedes ver, necesitaremos **tres** máquinas virtuales:
 - Un **servidor web** que será la máquina de pruebas, protegida por nuestro cortafuegos;
@@ -15,7 +15,7 @@ Como puedes ver, necesitaremos **tres** máquinas virtuales:
 ## Las máquinas virtuales
 ### El cortafuegos
 
-![Ilustración de un cortafuegos](../img/cortafuegos_mini.jpeg)
+![Ilustración de un cortafuegos](img/cortafuegos_mini.jpeg)
 
 Usaremos una máquina sencilla en la que instalaremos IPFire.
 Características requeridas:
@@ -91,11 +91,11 @@ Características requeridas:
 - Sistema: Debian, última versión
 - Configuración de red: un único interfaz, **conectado a red interna**. Usa el nombre ```GREEN``` para la red interna.
 
-[Instálalo](https://raw.githubusercontent.com/juliogaray/comunes/main/Tutorial%20de%20instalaci%C3%B3n%20Servidor%20Debian.md) como una máquina normal Debian, **pero**:
+[Instálalo](https://juliogaray.github.io/comunes/Tutorial%20de%20instalaci%C3%B3n%20Servidor%20Debian.md) como una máquina normal Debian, **pero**:
 
 Cuando te dé la opción de elegir qué paquetes instalar, marca estos:
 
-![Paquetes que se deben instalar: (1) Entorno de escritorio, (2) LXDE y (3) Utilidades estándar del sistema](../img/Seleccionar_paquetes_LXDE.png)
+![Paquetes que se deben instalar: (1) Entorno de escritorio, (2) LXDE y (3) Utilidades estándar del sistema](img/Seleccionar_paquetes_LXDE.png)
 
 > **NOTA:** [LXDE](https://www.lxde.org/) es uno de los sistemas de escritorio gráfico más ligeros que existen. Por eso nos podemos permitir crear una máquina con tan solo 1 GB de memoria.
 
@@ -154,7 +154,7 @@ La configuración del cortafuegos ha concluido. Puedes apagar la máquina en la 
 
 ### El servidor web
 
-![Ilustración de un web server](../img/webserver_mini.jpeg)
+![Ilustración de un web server](img/webserver_mini.jpeg)
 
 
 Necesitamos una máquina sencilla, un servidor Debian sin entorno gráfico, con el servidor Apache instalado. 
@@ -169,9 +169,9 @@ Características requeridas:
 Llama a tu maquina `sw-XXX`, donde XXX son tus iniciales.
 Sigue los pasos de instalación del tutorial de Debian, pero con la siguiente particularidad: cuando se te dé la opción de elegir los paquetes que se van a instalar, marca los siguientes (y nada más):
 
-![Paquetes que se deben instalar: (1) web server, (2) SSH server y (3) Utilidades estándar del sistema](../img/Seleccionar_paquetes_servidor_web.png)
+![Paquetes que se deben instalar: (1) web server, (2) SSH server y (3) Utilidades estándar del sistema](img/Seleccionar_paquetes_servidor_web.png)
 
-Sigue cuidadosamente las [instrucciones de instalación de Debian](https://raw.githubusercontent.com/juliogaray/comunes/main/Tutorial%20de%20instalaci%C3%B3n%20Servidor%20Debian.md) que ya conoces.
+Sigue cuidadosamente las [instrucciones de instalación de Debian](https://juliogaray.github.io/comunes/Tutorial%20de%20instalaci%C3%B3n%20Servidor%20Debian.md) que ya conoces.
 
 Una vez instalado y reiniciado el sistema, lo actualizaremos e instalaremos el paquete resolvconf:
 ```shell
