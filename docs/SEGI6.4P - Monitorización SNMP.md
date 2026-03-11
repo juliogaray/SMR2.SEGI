@@ -104,7 +104,7 @@ Zabbix permite monitorizar cualquier dispositivo que use SNMP, pero si se puede 
 
 Realiza la instalación incial del servidor Zabbix siguiendo [este tutorial](https://raw.githubusercontent.com/juliogaray/SMR2.SEGI/main/docs/SEGI6.4P%20-%20Zabbix%20I.md).
 
-Durante esta faase de instalación, realiza únicamente las siguientes capturas:
+Durante esta fase de instalación, realiza únicamente las siguientes capturas:
 - Página por defecto de Apache2 (desde el navegador de tu máquina anfitriona);
 - Página de información de PHP (ídem);
 - Página inicial de configuración de Zabbix (ídem).
