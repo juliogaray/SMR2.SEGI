@@ -26,16 +26,16 @@ Sigue los siguientes pasos para desarrollar esta práctica:
 6. Comprueba que tu máquina virtual tiene acceso al pendrive: ejecuta el comando ```ls /dev``` para ver los dispositivos disponibles. Tendrás tu unidad de disco básica, ***sda**,* con sus particiones (***sda1**,* ***sda2**,* etétera). Tu pendrive estará identificado como la última de las unidades **sd\*** (probablemente ***sdb**)* y seguramente podrás ver también las particiones que contenga, como ***sdb1**,* etc.
 7. Para poder hacer esta práctica, necesitamos instalar en la máquina un paquete de software especial: **libpam-usb**. Durante varios años el paquete dejó de ser mantenido por su creador, y acabó desapareciendo de los repositorios estándar de Debian. Pero un técnico lo ha retomado para volver a hacerlo activo y, aunque no está aún en los repositorios oficiales de Debian, al menos ya se puede instalar usando su repositorio personal. El primer paso es configurar tu sistema para aceptar la clave de cifrado de su repositorio:
 
-```bash
-wget -qO- "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x913558C8A5E552A7" | gpg --dearmor | sudo tee /usr/share/keyrings/apt.mcdope.org.gpg > /dev/null
-```
+    ```bash
+    wget -qO- "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x913558C8A5E552A7" | gpg --dearmor | sudo tee /usr/share/keyrings/apt.mcdope.org.gpg > /dev/null
+    ```
 
->**🔴 NOTA:** si hay problemas de red y el comando anterior no funciona correctamente, puedes descargarte el archivo de [este enlace](http://julio.iespacomolla.es/SMR2.SEGI/apt.mcdope.org.gpg) y copiarlo en el directorio ```/usr/share/keyrings/``` de tu máquina virtual. Puedes hacerlo con estos comandos (como _root):_
+    >**🔴 NOTA:** si hay problemas de red y el comando anterior no funciona correctamente, puedes descargarte el archivo de [este enlace](http://julio.iespacomolla.es/SMR2.SEGI/apt.mcdope.org.gpg) y copiarlo en el directorio ```/usr/share/keyrings/``` de tu máquina virtual. Puedes hacerlo con estos comandos (como _root):_
 
-```bash
-cd /usr/share/keyrings
-wget "https://julio.iespacomolla.es/SMR2.SEGI/apt.mcdope.org.gpg"
-```
+    ```bash
+    cd /usr/share/keyrings
+    wget "https://julio.iespacomolla.es/SMR2.SEGI/apt.mcdope.org.gpg"
+    ```
 
 8. A continuación añadimos su repositorio personal a nuestro archivo ```/etc/apt/sources.list```.
 Edita dicho archivo con el comando ```sudo nano /etc/apt/sources.list``` y añade al final la siguiente línea:
@@ -56,27 +56,32 @@ sudo apt install libpam-usb
 sudo pamusb-conf --add-device llave-de-julio
 ```
 
-Si tienes más de un dispositivo disponible (por ejemplo, para que más de un usuario puedan usar este sistema, con diferentes _pendrives),_ se te mostrarán, para que selecciones el que quieras usar.
+    Si tienes más de un dispositivo disponible (por ejemplo, para que más de un usuario puedan usar este sistema, con diferentes _pendrives),_ se te mostrarán, para que selecciones el que quieras usar.
 
 12. Añade todos los usuarios que requerirán usar un _pendrive_ para entrar al sistema (en este caso, al menos tu propio nombre de usuario):
 ```bash
 sudo pamusb-conf --add-user jgg
 ```
 
-En este caso, «jgg» es mi nombre de usuario. Tú tendrás que poner el tuyo, lógicamente.  
-El programa te preguntará en este punto qué token quieres usar (en esta práctica sólo debería aparecer uno, porque sólo hemos definido uno en el paso 11).
+    En este caso, «jgg» es mi nombre de usuario. Tú tendrás que poner el tuyo, lógicamente.  
+    El programa te preguntará en este punto qué token quieres usar (en esta práctica sólo debería aparecer uno, porque sólo hemos definido uno en el paso 11).
 
-13. Si todo está bien, en este momento el sistema te autentificará con contraseña **O** con el pendrive. Es decir, si el pendrive está conectado, ni siquiera te pedirá la contraseña. Vamos a cambiarlo para que nos pida AMBAS cosas. Edita el archivo ```/etc/pam.d/common-auth```. Este archivo contendrá una línea como esta:
+
+13. Comprueba, con el comando `id`, que tu usuario está incluido en el grupo `input`.  
+Si no es así, agrégalo manualmente con el comando `usermod -aG input jgg` (sustituyendo `jgg` por tu nombre de usuario).
+
+
+14. Si todo está bien, en este momento el sistema te autentificará con contraseña **O** con el pendrive. Es decir, si el pendrive está conectado, ni siquiera te pedirá la contraseña. Vamos a cambiarlo para que nos pida AMBAS cosas. Edita el archivo ```/etc/pam.d/common-auth```. Este archivo contendrá una línea como esta:
 ```
 auth    sufficient  pam_usb.so
 ```
 
-Debes cambiarla a:
-```
-auth    required    pam_usb.so
-```
+    Debes cambiarla a:
+    ```
+    auth    required    pam_usb.so
+    ```
 
-14. Ahora, tanto para conectarte a tu cuenta como para ejecutar cualquier comando con *sudo,* deberás tener el pendrive conectado e introducir tu contraseña. ¡Compruébalo!  
+15. Ahora, tanto para conectarte a tu cuenta como para ejecutar cualquier comando con *sudo,* deberás tener el pendrive conectado e introducir tu contraseña. ¡Compruébalo!  
 Ten en cuenta que si has hecho ```sudo su``` correctamente, puedes sacar el pendrive y volver a hacerlo sin problemas, porque sudo recuerda durante un tiempo que te has autentificado correctamente, y no hace ninguna comprobación.
 
 
