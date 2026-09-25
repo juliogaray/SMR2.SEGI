@@ -26,16 +26,16 @@ Sigue los siguientes pasos para desarrollar esta práctica:
 6. Comprueba que tu máquina virtual tiene acceso al pendrive: ejecuta el comando ```ls /dev``` para ver los dispositivos disponibles. Tendrás tu unidad de disco básica, ***sda**,* con sus particiones (***sda1**,* ***sda2**,* etétera). Tu pendrive estará identificado como la última de las unidades **sd\*** (probablemente ***sdb**)* y seguramente podrás ver también las particiones que contenga, como ***sdb1**,* etc.
 7. Para poder hacer esta práctica, necesitamos instalar en la máquina un paquete de software especial: **libpam-usb**. Durante varios años el paquete dejó de ser mantenido por su creador, y acabó desapareciendo de los repositorios estándar de Debian. Pero un técnico lo ha retomado para volver a hacerlo activo y, aunque no está aún en los repositorios oficiales de Debian, al menos ya se puede instalar usando su repositorio personal. El primer paso es configurar tu sistema para aceptar la clave de cifrado de su repositorio:
 
-    ```bash
-    wget -qO- "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x913558C8A5E552A7" | gpg --dearmor | sudo tee /usr/share/keyrings/apt.mcdope.org.gpg > /dev/null
-    ```
+	```bash
+	wget -qO- "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x913558C8A5E552A7" | gpg --dearmor | sudo tee /usr/share/keyrings/apt.mcdope.org.gpg > /dev/null
+	```
 
-    >**🔴 NOTA:** si hay problemas de red y el comando anterior no funciona correctamente, puedes descargarte el archivo de [este enlace](http://julio.iespacomolla.es/SMR2.SEGI/apt.mcdope.org.gpg) y copiarlo en el directorio ```/usr/share/keyrings/``` de tu máquina virtual. Puedes hacerlo con estos comandos (como _root):_
+	>**🔴 NOTA:** si hay problemas de red y el comando anterior no funciona correctamente, puedes descargarte el archivo de [este enlace](http://julio.iespacomolla.es/SMR2.SEGI/apt.mcdope.org.gpg) y copiarlo en el directorio ```/usr/share/keyrings/``` de tu máquina virtual. Puedes hacerlo con estos comandos (como _root):_
 
-    ```bash
-    cd /usr/share/keyrings
-    wget "https://julio.iespacomolla.es/SMR2.SEGI/apt.mcdope.org.gpg"
-    ```
+	```bash
+	cd /usr/share/keyrings
+	wget "https://julio.iespacomolla.es/SMR2.SEGI/apt.mcdope.org.gpg"
+	```
 
 8. A continuación añadimos su repositorio personal a nuestro archivo ```/etc/apt/sources.list```.
 Edita dicho archivo con el comando ```sudo nano /etc/apt/sources.list``` y añade al final la siguiente línea:
