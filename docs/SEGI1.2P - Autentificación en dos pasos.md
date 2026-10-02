@@ -33,6 +33,7 @@ Sigue los siguientes pasos para desarrollar esta práctica:
 	>**🔴 NOTA:** si hay problemas de red y el comando anterior no funciona correctamente, puedes descargarte el archivo de [este enlace](http://julio.iespacomolla.es/SMR2.SEGI/apt.mcdope.org.gpg) y copiarlo en el directorio ```/usr/share/keyrings/``` de tu máquina virtual. Puedes hacerlo con estos comandos (como _root):_
 
 	```bash
+    # OJO: usa estos comandos sólo si lo anterior no ha funcionado
 	cd /usr/share/keyrings
 	wget "https://julio.iespacomolla.es/SMR2.SEGI/apt.mcdope.org.gpg"
 	```
