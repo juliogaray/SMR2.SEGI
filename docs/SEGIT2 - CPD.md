@@ -67,7 +67,7 @@ Un CPD suele dividirse en áreas:
 | Zona                                 | Función                                                   |
 | ------------------------------------ | --------------------------------------------------------- |
 | **Sala de servidores**               | Aloja *[racks](https://es.wikipedia.org/wiki/Bastidor_de_19_pulgadas),* servidores y equipos de red.               |
-| **Sala técnica**                     | Espacio para [SAI](http://julio.iespacomolla.es/SMR2.SEGI/SEGIT2%20-%20SAI.md), cuadros eléctricos, climatización, etc. |
+| **Sala técnica**                     | Espacio para [SAI](https://juliogaray.github.io/SMR2.SEGI/SEGIT2%20-%20SAI.html), cuadros eléctricos, climatización, etc. |
 | **Área de control o monitorización** | Desde donde los técnicos supervisan los sistemas.         |
 | **Almacén técnico**                  | Guarda repuestos, herramientas y materiales.              |
 | **Centro de respaldo o backup**      | Instalación duplicada para emergencias.                   |
